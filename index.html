@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counterpunchers Community Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">CP</div>
+        <div>
+          <strong>Counterpunchers</strong>
+          <span>Fan Community Hub</span>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle">Menu</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#topics">Topics</a>
+        <a href="#receipts">Receipts</a>
+        <a href="#community">Community</a>
+        <a href="#events">Events</a>
+        <a href="#merch">Merch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Fan-built. Community-driven. Evidence-first.</p>
+        <h1>The place where the Counterpunchers organize ideas, receipts, questions, and community.</h1>
+        <p class="hero-text">A working prototype for a fan site that turns the audience into a research network, topic pipeline, and community hub supporting the show.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#submit-topic">Submit a Topic</a>
+          <a class="btn secondary" href="#mission">View the Mission</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>Core Mission</h2>
+        <p>We do not have to agree. We do have to think. Bring evidence, curiosity, and the willingness to take a punch and throw a counterpunch.</p>
+      </aside>
+    </section>
+
+    <section id="mission" class="section split">
+      <div>
+        <p class="eyebrow">Why this exists</p>
+        <h2>From audience to organized community</h2>
+        <p>This site gives the Counterpunchers a home base for submitting ideas, tracking sources, organizing discussions, and helping the show stay sharp without becoming overproduced.</p>
+      </div>
+      <div class="principles">
+        <div><strong>Think critically</strong><span>Separate facts, assumptions, and speculation.</span></div>
+        <div><strong>Stay grounded</strong><span>Use sources, receipts, and context.</span></div>
+        <div><strong>Keep it civil</strong><span>Disagree hard without wrecking the room.</span></div>
+        <div><strong>Build community</strong><span>Connect people beyond the comment section.</span></div>
+      </div>
+    </section>
+
+    <section id="topics" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Content pipeline</p>
+        <h2>Topic Submission Board</h2>
+        <p>Community members submit stories, questions, and issues for future shows.</p>
+      </div>
+      <div class="topic-grid" id="topicGrid"></div>
+    </section>
+
+    <section id="submit-topic" class="section form-section">
+      <div class="section-heading">
+        <p class="eyebrow">Submit something</p>
+        <h2>Send a topic to the crew</h2>
+        <p>This prototype stores submissions in your browser only. A real version would send these to a database or admin queue.</p>
+      </div>
+      <form id="topicForm" class="card form-card">
+        <label>Topic Title
+          <input type="text" id="topicTitle" placeholder="Example: Delaney Hall source breakdown" required />
+        </label>
+        <label>Category
+          <select id="topicCategory">
+            <option>Current Events</option>
+            <option>Politics</option>
+            <option>Media Literacy</option>
+            <option>AI & Technology</option>
+            <option>Local Issue</option>
+            <option>Community Question</option>
+          </select>
+        </label>
+        <label>Why it matters
+          <textarea id="topicWhy" rows="4" placeholder="What should Matt or the crew discuss? What angle matters?"></textarea>
+        </label>
+        <label>Source or link
+          <input type="url" id="topicSource" placeholder="https://..." />
+        </label>
+        <button class="btn primary" type="submit">Add to Board</button>
+      </form>
+    </section>
+
+    <section id="receipts" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Research center</p>
+        <h2>Receipts Library</h2>
+        <p>A place for sources, claims, fact checks, and follow-up research.</p>
+      </div>
+      <div class="cards three">
+        <article class="card">
+          <h3>Claim Tracker</h3>
+          <p>Track viral claims and classify them as verified, misleading, unsupported, or unresolved.</p>
+        </article>
+        <article class="card">
+          <h3>Source Vault</h3>
+          <p>Archive articles, court docs, government pages, reports, clips, and primary sources.</p>
+        </article>
+        <article class="card">
+          <h3>Media Literacy</h3>
+          <p>Break down headlines, clipped videos, screenshots, framing tricks, and bad sourcing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="community" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Community</p>
+        <h2>Counterpunchers Network</h2>
+      </div>
+      <div class="cards two">
+        <article class="card">
+          <h3>Member Profiles</h3>
+          <ul>
+            <li>Optional location by state or region</li>
+            <li>Skills and interests</li>
+            <li>Social links</li>
+            <li>Volunteer availability</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Community Roles</h3>
+          <ul>
+            <li>Researchers</li>
+            <li>Moderators</li>
+            <li>Designers</li>
+            <li>Writers</li>
+            <li>Event coordinators</li>
+            <li>Video editors</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="events" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Events</p>
+        <h2>Calls, Watch Parties, and Meetups</h2>
+      </div>
+      <div class="timeline">
+        <div><span>Weekly</span><strong>Post-show community call</strong><p>Open discussion after major episodes.</p></div>
+        <div><span>Monthly</span><strong>Counterpunch Town Hall</strong><p>Community-driven panel around one major issue.</p></div>
+        <div><span>Future</span><strong>Regional meetups</strong><p>Florida, Texas, Mid-Atlantic, California, and beyond.</p></div>
+      </div>
+    </section>
+
+    <section id="merch" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Brand ideas</p>
+        <h2>Merch Concepts</h2>
+      </div>
+      <div class="merch-grid">
+        <div class="merch-card"><span>Counterpunch Crew</span></div>
+        <div class="merch-card"><span>Counterpunch Athletics</span></div>
+        <div class="merch-card"><span>Stay Humble in the Wins</span></div>
+        <div class="merch-card"><span>Bring Receipts</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Prototype only. Built as a fan/community concept site.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
